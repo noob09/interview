@@ -72,7 +72,7 @@ public class BinaryTree {
     
     public int height(Node root){
         if(root == null){
-            return 0;
+            return 0; //return -1 for number of nodes between root to leaf
         }
         int leftHeight  = height(root.left);
         int rightHeight = height(root.right);
